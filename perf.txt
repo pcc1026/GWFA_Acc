@@ -1,0 +1,154 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 10K of event 'cpu-clock:uhpppH'
+# Event count (approx.): 2588000000
+#
+# Children      Self  Command   Shared Object       Symbol                            
+# ........  ........  ........  ..................  ..................................
+#
+    98.73%     0.00%  gwf-test  libc-2.31.so        [.] __libc_start_main
+            |
+            ---__libc_start_main
+               main
+               |          
+               |--96.91%--gwf_ed
+               |          |          
+               |           --0.57%--__mcount_internal
+               |          
+                --1.63%--__printf_chk
+                          |          
+                           --0.87%--__vfprintf_internal
+
+    98.73%     0.01%  gwf-test  gwf-test            [.] main
+            |          
+             --98.72%--main
+                       |          
+                       |--96.91%--gwf_ed
+                       |          |          
+                       |           --0.57%--__mcount_internal
+                       |          
+                        --1.63%--__printf_chk
+                                  |          
+                                   --0.87%--__vfprintf_internal
+
+    96.91%    95.49%  gwf-test  gwf-test            [.] gwf_ed
+            |          
+            |--95.49%--__libc_start_main
+            |          main
+            |          gwf_ed
+            |          
+             --1.42%--gwf_ed
+                       |          
+                        --0.57%--__mcount_internal
+
+     1.63%     0.18%  gwf-test  libc-2.31.so        [.] __printf_chk
+            |          
+             --1.45%--__printf_chk
+                       |          
+                        --0.87%--__vfprintf_internal
+
+     0.89%     0.89%  gwf-test  libc-2.31.so        [.] __vfprintf_internal
+            |
+            ---__libc_start_main
+               main
+               |          
+                --0.87%--__printf_chk
+                          __vfprintf_internal
+
+     0.64%     0.64%  gwf-test  libc-2.31.so        [.] __mcount_internal
+            |
+            ---__libc_start_main
+               main
+               gwf_ed
+               |          
+                --0.57%--__mcount_internal
+
+     0.59%     0.59%  gwf-test  libc-2.31.so        [.] __GI___libc_write
+     0.43%     0.00%  gwf-test  [unknown]           [.] 0x0000562798deaa00
+     0.36%     0.36%  gwf-test  libc-2.31.so        [.] _IO_file_xsputn@@GLIBC_2.2.5
+     0.28%     0.28%  gwf-test  libc-2.31.so        [.] _mcount
+     0.23%     0.23%  gwf-test  gwf-test            [.] kfree
+     0.18%     0.18%  gwf-test  gwf-test            [.] kmalloc
+     0.18%     0.18%  gwf-test  libc-2.31.so        [.] __strchrnul_avx2
+     0.18%     0.04%  gwf-test  gwf-test            [.] kcalloc
+     0.14%     0.14%  gwf-test  libc-2.31.so        [.] __memmove_avx_unaligned_erms
+     0.13%     0.13%  gwf-test  libc-2.31.so        [.] _itoa_word
+     0.10%     0.10%  gwf-test  libc-2.31.so        [.] _IO_do_write@@GLIBC_2.2.5
+     0.10%     0.10%  gwf-test  libc-2.31.so        [.] _IO_file_write@@GLIBC_2.2.5
+     0.08%     0.08%  gwf-test  libc-2.31.so        [.] _IO_file_overflow@@GLIBC_2.2.5
+     0.08%     0.00%  gwf-test  [unknown]           [.] 0x30323d7473696420
+     0.07%     0.07%  gwf-test  libc-2.31.so        [.] __strlen_avx2
+     0.05%     0.00%  gwf-test  [unknown]           [.] 0x32323d7473696420
+     0.04%     0.04%  gwf-test  libc-2.31.so        [.] __memset_avx2_unaligned_erms
+     0.04%     0.04%  gwf-test  libpthread-2.31.so  [.] _pthread_cleanup_pop_restore
+     0.04%     0.00%  gwf-test  [unknown]           [.] 0x31313d7473696420
+     0.04%     0.00%  gwf-test  [unknown]           [.] 0x32313d7473696420
+     0.04%     0.00%  gwf-test  [unknown]           [.] 0x36313d7473696420
+     0.04%     0.00%  gwf-test  [unknown]           [.] 0x38313d7473696420
+     0.03%     0.03%  gwf-test  gwf-test            [.] rs_insertsort_gwf_intv
+     0.03%     0.02%  gwf-test  gwf-test            [.] rs_sort_gwf_intv
+     0.03%     0.03%  gwf-test  libc-2.31.so        [.] __mempcpy_avx_unaligned_erms
+     0.03%     0.03%  gwf-test  libc-2.31.so        [.] 0x00000000000255a0
+     0.03%     0.00%  gwf-test  [unknown]           [.] 0x34323d7473696420
+     0.03%     0.00%  gwf-test  [unknown]           [.] 0x35323d7473696420
+     0.03%     0.00%  gwf-test  libc-2.31.so        [.] 0x00007f2ea72cd5a0
+     0.02%     0.02%  gwf-test  libpthread-2.31.so  [.] _pthread_cleanup_push_defer
+     0.02%     0.00%  gwf-test  [unknown]           [.] 0x30313d7473696420
+     0.02%     0.00%  gwf-test  [unknown]           [.] 0x31323d7473696420
+     0.02%     0.00%  gwf-test  [unknown]           [.] 0x33313d7473696420
+     0.02%     0.00%  gwf-test  [unknown]           [.] 0x35313d7473696420
+     0.02%     0.00%  gwf-test  [unknown]           [.] 0x37313d7473696420
+     0.02%     0.00%  gwf-test  [unknown]           [.] 0x38383d7473696420
+     0.01%     0.01%  gwf-test  gwf-test            [.] krealloc
+     0.01%     0.01%  gwf-test  gwf-test            [.] rs_insertsort_gwf_ed
+     0.01%     0.01%  gwf-test  ld-2.31.so          [.] _dl_relocate_object
+     0.01%     0.01%  gwf-test  libc-2.31.so        [.] 0x0000000000025394
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x41e589480000b264
+     0.01%     0.01%  gwf-test  gwf-test            [.] ks_getuntil2.part.0
+     0.01%     0.01%  gwf-test  gwf-test            [.] 0x0000000000001340
+     0.01%     0.00%  gwf-test  ld-2.31.so          [.] _dl_sysdep_start
+     0.01%     0.01%  gwf-test  libc-2.31.so        [.] 0x00000000000255a4
+     0.01%     0.01%  gwf-test  libpthread-2.31.so  [.] __libc_read
+     0.01%     0.00%  gwf-test  ld-2.31.so          [.] dl_main
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x30353d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x30393d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x31333d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x31343d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x31363d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x31414e2d34430302
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x32363d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x32383d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x32393d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x33323d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x33393d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x34313d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x34333d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x34363d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x35373d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x36393d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x37353d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x37383d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x38373d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x38393d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x39383d7473696420
+     0.01%     0.00%  gwf-test  [unknown]           [.] 0x4347474347475447
+     0.01%     0.01%  gwf-test  libc-2.31.so        [.] __memset_avx2_erms
+     0.01%     0.01%  gwf-test  libz.so.1.2.11      [.] 0x0000000000002cf9
+     0.01%     0.01%  gwf-test  libz.so.1.2.11      [.] 0x0000000000008f77
+     0.01%     0.01%  gwf-test  libz.so.1.2.11      [.] 0x0000000000009176
+     0.01%     0.01%  gwf-test  libz.so.1.2.11      [.] 0x0000000000009432
+     0.01%     0.00%  gwf-test  gwf-test            [.] 0x000056279711b340
+     0.01%     0.00%  gwf-test  libc-2.31.so        [.] 0x00007f2ea72cd394
+     0.01%     0.00%  gwf-test  libc-2.31.so        [.] 0x00007f2ea72cd5a4
+     0.01%     0.00%  gwf-test  libz.so.1.2.11      [.] 0x00007f2ea74bfcf9
+     0.01%     0.00%  gwf-test  libz.so.1.2.11      [.] 0x00007f2ea74c5f77
+     0.01%     0.00%  gwf-test  libz.so.1.2.11      [.] 0x00007f2ea74c6176
+     0.01%     0.00%  gwf-test  libz.so.1.2.11      [.] 0x00007f2ea74c6432
+
+
+#
+# (Tip: Use parent filter to see specific call path: perf report -p <regex>)
+#

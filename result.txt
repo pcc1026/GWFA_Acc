@@ -1,0 +1,20 @@
+Proc 0 > n = 8, local_n = 8
+NA19240#1	113,thread 1,proc0
+NA19240#1	113,thread 0,proc0
+NA19240#1	113,thread 2,proc0
+NA19240#1	113,thread 5,proc0
+NA19240#1	113,thread 3,proc0
+NA19240#1	113,thread 6,proc0
+NA19240#1	113,thread 7,proc0
+NA19240#1	113,thread 4,proc0
+reads: 8
+bases: 952960
+The elapsed time for GFA is 5.709887e-03 seconds
+The elapsed time for gwf process is 8.416176e-05 seconds
+The elapsed time for fa is 1.360893e-03 seconds
+The elapsed time for cp is 7.662058e-03 seconds
+Elapsed time = 7.660866e-03
+
+real	0m0.068s
+user	0m0.007s
+sys	0m0.055s

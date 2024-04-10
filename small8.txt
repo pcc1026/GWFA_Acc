@@ -1,0 +1,51 @@
+Proc 0 > n = 8, local_n = 4
+Proc 1 > n = 8, local_n = 4
+NA19240#1	113,thread 1,proc0
+NA19240#1	113,thread 0,proc1
+NA19240#1	113,thread 1,proc1
+NA19240#1	113,thread 0,proc0
+NA19240#1	113,thread 1,proc0
+NA19240#1	113,thread 0,proc1
+NA19240#1	113,thread 1,proc1
+NA19240#1	113,thread 0,proc0
+reads: 8
+bases: 952960
+The elapsed time for GFA is 6.795883e-03 seconds
+The elapsed time for gwf process is 9.417534e-05 seconds
+The elapsed time for fa is 1.364946e-03 seconds
+The elapsed time for cp is 5.234957e-03 seconds
+Elapsed time = 5.113125e-03
+Proc 0 > n = 8, local_n = 4
+Proc 1 > n = 8, local_n = 4
+NA19240#1	113,thread 1,proc0
+NA19240#1	113,thread 0,proc0
+NA19240#1	113,thread 0,proc1
+NA19240#1	113,thread 1,proc1
+NA19240#1	113,thread 1,proc0
+NA19240#1	113,thread 0,proc0
+NA19240#1	113,thread 0,proc1
+NA19240#1	113,thread 1,proc1
+reads: 8
+bases: 952960
+The elapsed time for GFA is 5.774021e-03 seconds
+The elapsed time for gwf process is 1.530647e-04 seconds
+The elapsed time for fa is 1.770973e-03 seconds
+The elapsed time for cp is 4.276037e-03 seconds
+Elapsed time = 4.674673e-03
+Proc 0 > n = 8, local_n = 4
+Proc 1 > n = 8, local_n = 4
+NA19240#1	113,thread 1,proc0
+NA19240#1	113,thread 1,proc1
+NA19240#1	113,thread 0,proc1
+NA19240#1	113,thread 0,proc0
+NA19240#1	113,thread 0,proc0
+NA19240#1	113,thread 1,proc0
+NA19240#1	113,thread 1,proc1
+NA19240#1	113,thread 0,proc1
+reads: 8
+bases: 952960
+The elapsed time for GFA is 5.917788e-03 seconds
+The elapsed time for gwf process is 1.249313e-04 seconds
+The elapsed time for fa is 1.281023e-03 seconds
+The elapsed time for cp is 4.745007e-03 seconds
+Elapsed time = 4.725695e-03
